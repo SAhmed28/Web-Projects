@@ -1,0 +1,411 @@
+@media (max-width: 1199px){
+    #banner .over .ank {
+        position: absolute;
+        left: -7%;
+    }
+    /*==========header ends here==============*/
+    #service .overs {
+        top: 210px;
+    }
+    #service .a1 .overs {
+        top: 200px;
+    }
+    #service .a2 {
+        height: 277px;
+        width: 375px;
+    }
+    #service .a2 h5 {
+        padding-top: 185px;
+    }
+    #service .a2 h5::after {
+        left: 141px;
+    }
+    /*==========service ends here==============*/
+    #blog .div1 h5 {
+        font-size: 15px;
+        line-height: 24px;
+        padding-top: 34px;
+    }
+    /*==========blog ends here==============*/
+    #register h3 {
+        font-size: 18px;
+    }
+    #register a {
+        margin: 32px 0 32px 0px;
+    }
+    /*==========register ends here==============*/
+    
+}
+
+/*============large view ends=============*/
+@media(min-width:768px) and (max-width:991px){
+    .navbar-brand{
+        padding: 15px 0px;
+    }
+    .navbar-brand > img {
+        position: absolute;
+        left: 28px;
+    }
+    #banner .bg {
+        height: 500px;
+    }
+    #banner .over .nav > li > a {
+        padding: 60px 5px 0 5px;
+    }
+    #banner h3 {
+        padding-top: 70px;
+        font-size: 59px;
+    }
+    #banner .over p {
+        font-size: 15px;
+        padding-bottom: 60px;
+    }
+    #banner .over .ank li a {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+    }
+    #banner .over .ank li .get{
+        position: absolute;
+        left: 175px;
+    }
+    #banner .over .ank li .take{
+        position: absolute;
+        left: 430px;
+    }
+    /*==========header ends here==============*/
+    #we p{
+        padding-bottom: 30px;
+    }
+    #we a {
+        width: 200px;
+        height: 50px;
+        line-height: 50px;
+        margin-bottom: 40px;
+    }
+    #we img{
+        width: 100%;
+    }
+    /*==========we ends here==============*/
+    #mobile h3 {
+        padding: 80px 0px 50px;
+    }
+    #mobile a{
+        margin-bottom: 70px;
+    }
+    /*==========mobile ends here==============*/
+    #service .a2 {
+        height: 212px;
+        width: 284px;
+        margin-bottom: 70px;
+    }
+    #service .a2 h5 {
+        padding-top: 125px;
+    }
+    #service .a2 h5::after {
+        left: 50px;
+    }
+    #service .overs h4 {
+        margin-top: -65px;
+        margin-left: 12px;
+        font-size: 15px;
+    }
+    #service .sm .overs h4{
+        margin-top: -94px;
+        margin-left: 12px;
+    }
+    /*==========service ends here==============*/
+    #contact h2{
+        line-height: 65px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    #contact a {
+        margin-top: 30px;
+        line-height: 65px;
+        margin-bottom: 30px;
+        margin-left: 212px;
+    }
+    /*==========contact ends here==============*/
+    #blog .div1 {
+        height: 110px;
+    }
+    #blog .div1 h4 {
+        line-height: none;
+    }
+    #blog .div1 h5 {
+        font-size: 15px;
+        line-height: 24px;
+        padding-top: 36px;
+    }
+    /*==========blog ends here==============*/
+    #register p {
+        padding: 0px 0px 0px 25px;
+    }
+    #register a {
+        margin: 10px 0 30px 0px;
+        margin-left: 35%;
+    }
+    /*==========register ends here==============*/
+    #blom ul {
+        padding: 50px 0px 40px;
+        text-align: center;
+    }
+    /*==========blom ends here==============*/
+    
+    
+    
+    /*==========about page starts here==============*/
+    .about .navbar-right {
+        margin-top: 45px;
+    }
+    .about header .nav_bg ul li {
+        padding-right: 7px;
+    }
+    .about header .nav_bg h3 {
+        font-size: 65px;
+        padding-top: 75px;
+        padding-bottom: 25px;
+    }
+    .about{}
+    .about{}
+    .about{}
+    .about{}
+    .about{}
+    /*==========about page ends here==============*/
+        
+    
+    
+    
+}
+
+/*============tab device ends=============*/
+@media(max-width:767px){
+    #banner .bg{
+        height: 320px;
+    }
+    .carousel-indicators li{
+        width: 20px;
+    }
+    .carousel-indicators .active{
+        width: 20px;
+    }
+    .navbar-nav {
+        margin: 14.5px -15px;
+    }
+    .navbar-brand {
+        padding-top: 40px;
+        padding-left: 0px;
+        margin-left: -32px;
+        margin-right: 22px;
+    }
+    .navbar-toggle{
+        position: relative;
+        border: 1px solid #fff;
+        margin-top: 47px;
+        margin-left: 5px;
+    }
+    .navbar-toggle .icon-bar{
+        background: #753d9d;
+    }
+    #banner .over .nav > li > a {
+        padding: 0px 10px 0 40px;
+        background: rgba(0, 0, 0,.6);
+    }
+        /*==============about page starts=============*/
+            .about .navbar-toggle {
+                position: relative;
+                border: 1px solid #fff;
+                margin: 46px 20px;
+            }
+            .about .navbar-brand{
+                margin-left: 28px;
+            }
+            .about header .nav_bg ul li {
+                 float: left;
+            }
+            .about .navbar-nav {
+                margin: 0.5px -15px;
+            }
+            .about .nav_bg h3 {
+                font-size: 47px;
+                padding-top: 87px;
+            }
+            .about .nav_bg .container .row ul {
+                padding-top: 100px;
+                padding-left: 90px;
+            }
+            .about #int .wr{
+                padding-bottom: 0px;
+            }
+            .about #int .wr h2 {
+                font-size: 32px;
+                padding-bottom: 8px;
+                margin-bottom: 25px;
+                padding-top: 45px;
+            }
+            .about #join{
+                margin-bottom: 50px;
+            }
+            .about #join h3 {
+                padding: 80px 0px 40px;
+                font-size: 35px;
+            }
+            .about #join a {
+                font-size: 15px;
+                width: 155px;
+                height: 40px;
+                line-height: 40px;
+                margin-bottom: 70px;
+            }
+            .about #some p{
+                margin-bottom: 50px;
+            }
+        /*==============about page ends=============*/
+    /*==========header ends here==============*/
+    #we h3{
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    #we p{
+        padding-bottom: 20px;
+    }
+    #we a {
+        font-size: 16px;
+        width: 150px;
+        height: 50px;
+        border: 2px solid #0d113d;
+        border-radius: 5px;
+        line-height: 50px;
+        transition: all linear 0.3s;
+        margin-bottom: 0px;
+    }
+    #we img{
+        padding-bottom: 20px;
+    }
+    /*==========we ends here==============*/
+    #create ul{
+        margin-top: 30px;
+    }
+    #create p{
+        padding-bottom: 20px;
+    }
+    /*==========create ends here==============*/
+    #mobile h3 {
+        padding: 55px 0px 30px;
+        font-size: 27px;
+    }
+    #mobile a {
+        font-size: 12px;
+        width: 150px;
+        height: 40px;
+        line-height: 40px;
+        padding-bottom: 35px;
+    }
+    /*==========mobile ends here==============*/
+    #service .a2 {
+        height: 250px;
+        width: auto;
+    }
+    #service .a2 h5 {
+        padding-top: 145px;
+    }
+    #service .a2 h5::after {
+        left: 55px;
+    }
+    #service .overs h4{
+        margin-top: 66px;
+    }
+    #service .sm img{
+        height: 330px;
+    }
+    #service .sm h4{
+        margin-top: 30px;
+    }
+    /*==========service ends here==============*/
+    #great h3 {
+        padding: 25px 0px 10px;
+        font-size: 22px;
+    }
+    #great ul {
+        padding-bottom: 20px;
+    }
+    /*==========great ends here==============*/
+    #contact h2 {
+        line-height: 35px;
+        font-size: 26px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    #contact a {
+        font-size: 18px;
+        width: 200px;
+        height: 50px;
+        margin-top: 26px;
+        line-height: 50px;
+        margin-bottom: 45px;
+        margin-left: 47px;
+    }
+    /*==========contact ends here==============*/
+    #portfolio h3 {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    /*==========portfolio ends here==============*/
+    #blog h3 {
+        margin: 74px 0px 0px;
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 10px;
+    }
+    #blog .div1{
+        height: 120px;
+    }
+    #blog .div1 h4{
+        font-size: 16px;
+    }
+    #blog .div1 h4:last-child {
+        line-height: 22px;
+        padding: 28px 0px 20px;
+    }
+    /*==========blog ends here==============*/
+    #register h3 {
+        font-size: 18px;
+        padding: 40px 0px 8px 16px;
+    }
+    #register p {
+        padding: 0px 0px 16px 16px;
+    }
+    #register input[type="text"], select {
+        width: 91%;
+        margin-left: 14px;
+    }
+    #register a {
+        margin: 8px 0 32px 46px;
+        padding: 14px 45px;
+    }
+    /*==========register ends here==============*/
+    #blom img {
+        padding: 45px 0px 25px;
+    }
+    #blom ul {
+        padding: 50px 0px 0px;
+    }
+    /*==========blom ends here==============*/
+    #at p{
+        padding: 20px 0px;
+    }
+    #at ul {
+        float: none;
+        padding-left: 75px;
+    }
+    #at ul li {
+        float: left;
+        padding: 10px 15px 30px 20px;
+    }
+    /*==========at ends here==============*/
+}
+
+/*============mobile device ends=============*/
