@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+ol,ul{
+    list-style: none;
+}
+a,a:hover{
+    text-decoration: none;
+}
+img{
+    border: 0px;
+}
+h1,h2,h3,h4,h5,h6,ol,ul,p,address{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.clr{
+    clear: both;
+}
+@font-face{
+    font-family:opensans_exb;
+    src:url(../fonts/open-sans/OpenSans-ExtraBold.ttf);
+}
+@font-face{
+    font-family:opensans_reg;
+    src:url(../fonts/open-sans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Roboto";
+    src: '../fonts/Roboto/Roboto-Regular.ttf';
+}
+body{}
+.bg{
+    background: #36d87a;
+}
+
+/* ------------------ Comment --------------------*/
+
+/* ------------------ Variables --------------------*/
+$primary-color : #4458dc;
+$primary-color2: #854fee;
+$title-color: #141313;
+$text-color: #777777;  
+$border-color: #201f1f17;  
+$gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+$shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+$box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
+
+$font: "Roboto",cursive;
+
+$font1: normal 500 15px/2px $font;  /*font-style, weight, size-line-height, family*/
+$title-text: normal bold 50px/72px $font;
+
+
+.title-h1{
+    font: normal bold 39px/40px $font;
+}
+/* ------------------ Style --------------------*/
+.menu .navbar{
+    padding: 20px 0px;
+}
+.menu .navbar ul li{
+    padding-left: 20px;
+}
+.menu .navbar ul li a{
+    font-family: $font;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $title-color !important;
+}
+.menu .navbar ul .active a{
+    color: $primary-color2 !important;
+}
+.menu .navbar ul a:hover{
+    color: $primary-color2 !important;
+}
+
+
+
+/*--- To change the navbar position by scrolling, js code */
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0; right: 0;
+    background: #ffffff;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 1s ease;
+}
+
+.header_area .main-menu .nav-item .nav-link {
+    font: normal 500 22px/10px $font;
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+}
+
+/* ------------------ Menu ends --------------------*/
+
+.banner{
+    background: url(../img/banner/home-banner.png) no-repeat;
+    background-position: 0% 50%;        /*horizontal,vertical*/
+}
+.banner h3{
+    padding-top: 35%;
+    font-weight: 500;
+}
+.banner h3::after{
+    content: "";
+    height: 2px;
+    width: 18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+.banner h1{
+    font-size: 5rem;
+}
+.banner h4{
+    font-size: 1.5rem;
+}
+.banner .banner-image img{
+    padding: 7rem 0;
+    width: 90rem;
+}
+.banner h1,h4,h3{
+    font: $title-text;
+}
+
+
+/* ------------------ All Buttons--------------------*/
+/* ------------------ ---------- -------------------*/
+.button{
+    padding: .8rem 2.2rem;
+    font: normal 500 16px/20px $font;
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+.button.primary-button{
+    background: $gradient-color;
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: background .6s ease;
+    box-shadow: $box-shadow;
+}
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+.button.primary-button::after, .button.secondary-button::after{
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    background: $gradient-color;
+    content: "";
+    z-index: -1;
+    border-radius: 4px;;
+}
+
+
+
+.button.secondary-button{
+    background: white;
+    background-clip: padding-box;
+    transition: background .6s ease;
+}
+.button.secondary-button:hover{
+    background: $gradient-color;
+    color: whitesmoke;
+    box-shadow: $box-shadow;
+}
+/* ------------------ All Buttons--------------------*/
+
+/* ------------------ Banner ends --------------------*/
+.about .about-image-part img{
+    width: 100%;
+}
+.about .about-right{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about .about-right h2{
+    font-family: $font;
+    font-size: 3.2rem;
+    font-weight: bolder;
+    line-height: 4.5rem;
+    letter-spacing: 1.5rem;
+    padding-bottom: 20px;
+}
+.about .about-right h2 span{
+    display: block;
+}
+.about .about-right p{
+    padding: 20px 0px 20px 0px;
+    color: $text-color;
+    font: normal 500 16px/25px $font;
+}
+.about .about-right button{
+    margin-top: 40px;
+}
+
+/* ------------------ About ends --------------------*/
+
+.experience{
+    margin-top: 3%;
+    padding: 4rem 0rem;
+}
+.experience .brands .a-brand{
+    width: 180px;
+    height: 100px;
+    margin: 20px 15px;
+    border: 1px solid $border-color;
+    text-align: center;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+.experience .brands .a-brand:hover{
+    box-shadow: $box-shadow;
+    transform: scale(1.1);
+}
+.experience .brands .a-brand:hover img{
+    filter: brightness(0.15);
+}
+.experience .brands .a-brand img{
+    padding: 30px 0px;
+    width: 100%;
+}
+
+
+.experience .years{
+    position: relative;
+}
+.experience .years-area{
+    background: url(../img/client-info-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    
+}
+.experience .years-area .p-3{
+    color: $primary-color2;
+    z-index: 2;
+    font: normal bold 84px/40px $font;
+}
+.experience .years-area h2 span{
+    display: block;
+    font: normal 600 22px/30px $font;
+}
+.experience .call-area{
+    padding-left: 10rem;
+}
+.experience .call-area span{
+    display: block;
+}
+.experience  .call-now{
+    font: $font1;
+}
+.experience  .call-now a{
+    line-height: 3rem;
+}
+
+.experience .years .bg-panel{
+    position: absolute;
+    left: -200px; top: 0%;
+    background: #e029290a;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+
+/* ------------------ Experience ends --------------------*/
+
+
+#service .service-title{
+    padding: 7rem 5rem;
+}
+#service .service-title h1{
+    font: normal 500 35px/100px $font;
+    font-weight: bolder;
+}
+#service .service-title p{
+    font: normal 500 18px/25px $font;
+}
+
+
+#service .service-box{
+    padding: 2rem 0rem;
+    width: 16rem;
+    margin: 2rem 0.5rem;
+    background: rgba(248,252,253,0.973);
+    transition: box-shadow .7s ease;
+}
+#service .service-box:hover{
+    box-shadow: $box-shadow;
+}
+#service .service-box .icon{
+    padding: 2rem 0rem;
+}
+
+#service .service-box h2{
+    font:normal 500 20px/30px $font;
+}
+#service .service-box p{
+    font:normal 200 18px/20px $font;
+    color: $text-color;
+}
+/* ------------------- Service ends ---------------------*/
+
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+
+#recent-project {
+    padding: 8rem 0;
+}
+
+.project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px $font;
+    text-transform: uppercase;
+}
+
+.project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px $font;
+}
+
+.project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+/* ------------------- Recent Project ends ---------------------*/
+
+.about-title {
+	margin-top: 8rem;
+}
+
+.about-area .about-title p{
+    padding: 1rem 7rem;
+}
+
+.about-area .client{
+    background: #ffffff10;
+    box-shadow: $box-shadow;
+    margin: 14rem 0rem 2rem;
+}
+
+.about-area .client .client-img{
+    padding: 2rem;
+}
+
+.about-area .client .about-client{
+    padding-top: 2rem;
+}
+
+.about-area .client .about-client h4{
+    font: normal 500 21px/ 20px $font;
+}
+
+.about-area .client .about-client p{
+    font-size: 14px;
+}
+
+.about-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;
+}
+
+.about-area .owl-carousel .owl-dots .owl-dot.active span{
+    background: $primary-color;
+    width: 12px;
+    height: 12px;
+}
+
+
+
+/* ------------------- About me part ends ---------------------*/
+
+
+
+.subscribe-us-area .subscribe{
+    background: url(../img/subscribe-bg.png) no-repeat center;
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+
+.subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/ 30px $font;
+    color: whitesmoke;
+}
+
+.subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+ .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: white;
+    font: normal 500 17px/20px $font;
+}
+
+ .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+ .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: .7rem 2rem;
+}
+
+
+
+/* ------------------- End Subscribe ---------------------*/
+
+
+
+footer.footer-area{
+    padding: 5rem 0;
+    background: url(../img/footer-bg.png) no-repeat center;
+}
+
+footer.footer-area .social h5{
+    font: normal 500 23px/ 30px var(--roboto);
+}
+
+footer.footer-area .social a > i{
+    font-size:22px;
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-area .social a:hover > i{
+    color: var(--primary-color);
+}
+
+
+
+
+/* ------------------- End Footer ---------------------*/
+
+
+
+
+
+
+
+
+
