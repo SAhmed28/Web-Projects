@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Date & Time NOW!</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.min.css">  <!--  font awesome icons  -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="navbar mb-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+    </section>
+    <!-- =================== Navbar ends =================-->
+
+
+    <section class="jumbo">
+        <div class="container jumbotron">
+          <h1 class="display-7"><b>Edmonton</b> Time now: <span id="edmonton-time"></span></h1>
+          <hr class="my-4">
+          <h1 class="display-7"><b>Bangladesh</b> Time now: <span id="bd-time"></span></h1>
+          <a class="btn btn-primary btn-lg" href="#" role="button" onclick="show()">Analog Clock</a>
+        </div>
+    </section>
+
+    <!-- =================== Jumbotron ends =================-->
+
+
+        
+    <section class="analog" id="analogClock">
+      <div class="container">
+        <div class="clock">
+          <div class="hand hour" data-hour-hand></div>
+          <div class="hand minute" data-minute-hand></div>
+          <div class="hand second" data-second-hand></div>
+          <div class="number number1">1</div>
+          <div class="number number2">2</div>
+          <div class="number number3">3</div>
+          <div class="number number4">4</div>
+          <div class="number number5">5</div>
+          <div class="number number6">6</div>
+          <div class="number number7">7</div>
+          <div class="number number8">8</div>
+          <div class="number number9">9</div>
+          <div class="number number10">10</div>
+          <div class="number number11">11</div>
+          <div class="number number12">12</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== Analog Clock ends =================-->
+
+
+
+
+
+    <script src="js/jquery-3.6.0.slim.min.js"></script> 
+    <script src="js/bootstrap.min.js"></script> 
+    <script src="js/index.js"></script> 
+</body>
+</html>
